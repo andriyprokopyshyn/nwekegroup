@@ -1346,8 +1346,8 @@ form {
     }
 }
 
-.manage-traider {
-    .traider-form {
+.manage-trader {
+    .trader-form {
         flex-direction: column-reverse;
     }
     .btn-container {
@@ -1356,7 +1356,7 @@ form {
 }
 
 @media (min-width: 768px) {
-    .manage-traider {
+    .manage-trader {
         form {
             > div {
                 &:first-of-type {
@@ -1372,7 +1372,7 @@ form {
                 align-items: flex-end;
             }
         }
-        .traider-form {
+        .trader-form {
             flex-direction: unset;
         }
         .btn-container {
@@ -1383,7 +1383,7 @@ form {
 }
 
 @media (min-width: 1200px) {
-    .manage-traider {
+    .manage-trader {
         form {
             .button-container {
                 height: 53px;

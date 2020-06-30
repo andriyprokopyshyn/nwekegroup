@@ -1341,41 +1341,41 @@ form .button-container button {
   width: 48%;
 }
 
-.manage-traider .traider-form {
+.manage-trader .trader-form {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
 
-.manage-traider .btn-container {
+.manage-trader .btn-container {
   margin: 0.75rem 0 1.25rem 0;
 }
 
 @media (min-width: 768px) {
-  .manage-traider form > div:first-of-type .form-group:last-of-type {
+  .manage-trader form > div:first-of-type .form-group:last-of-type {
     margin-bottom: 0;
   }
-  .manage-traider form .button-container {
+  .manage-trader form .button-container {
     height: 68px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .manage-traider .traider-form {
+  .manage-trader .trader-form {
     -webkit-box-orient: unset;
     -webkit-box-direction: unset;
         -ms-flex-direction: unset;
             flex-direction: unset;
   }
-  .manage-traider .btn-container {
+  .manage-trader .btn-container {
     margin: 0 0 0 auto;
     max-width: 173px;
   }
 }
 
 @media (min-width: 1200px) {
-  .manage-traider form .button-container {
+  .manage-trader form .button-container {
     height: 53px;
   }
 }
