@@ -1328,7 +1328,7 @@ form select.form-control {
   height: 48px !important;
   padding: .375rem 1.25rem;
   -webkit-appearance: none;
-  background: url(/img/select-arrow.svg) no-repeat calc(100% - 20px);
+  background: url(../img/select-arrow.svg) no-repeat calc(100% - 20px);
 }
 
 form .button-container {
