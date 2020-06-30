@@ -126,10 +126,10 @@ $(document).ready(function () {
     var page_length = blotterTable.page.info().length;
     var total_pages = Math.ceil(total_records / page_length);
     var current_page = blotterTable.page.info().page + 1;
-    $('.paginate_button.first').html("<img src='/img/paginate-first.svg' alt='first'>");
-    $('.paginate_button.last').html("<img src='/img/paginate-last.svg' alt='last'>");
-    $('.paginate_button.previous').html("<img src='/img/paginate-prev.svg' alt='prev'>");
-    $('.paginate_button.next').html("<img src='/img/paginate-next.svg' alt='next'>");
+    $('.paginate_button.first').html("<img src='img/paginate-first.svg' alt='first'>");
+    $('.paginate_button.last').html("<img src='img/paginate-last.svg' alt='last'>");
+    $('.paginate_button.previous').html("<img src='img/paginate-prev.svg' alt='prev'>");
+    $('.paginate_button.next').html("<img src='img/paginate-next.svg' alt='next'>");
 
     var content = "Page " + current_page + " of " + (page_length < 0 ? 1 : total_pages);
 
@@ -226,10 +226,10 @@ $(document).ready(function () {
     var page_length = instrumentReportTable.page.info().length;
     var total_pages = Math.ceil(total_records / page_length);
     var current_page = instrumentReportTable.page.info().page + 1;
-    $('.paginate_button.first').html("<img src='/img/paginate-first.svg' alt='first'>");
-    $('.paginate_button.last').html("<img src='/img/paginate-last.svg' alt='last'>");
-    $('.paginate_button.previous').html("<img src='/img/paginate-prev.svg' alt='prev'>");
-    $('.paginate_button.next').html("<img src='/img/paginate-next.svg' alt='next'>");
+    $('.paginate_button.first').html("<img src='img/paginate-first.svg' alt='first'>");
+    $('.paginate_button.last').html("<img src='img/paginate-last.svg' alt='last'>");
+    $('.paginate_button.previous').html("<img src='img/paginate-prev.svg' alt='prev'>");
+    $('.paginate_button.next').html("<img src='img/paginate-next.svg' alt='next'>");
 
     var content = "Page " + current_page + " of " + (page_length < 0 ? 1 : total_pages);
 
