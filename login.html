@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 </head>
+
 <body>
 
     <div class="login-container">
@@ -19,16 +21,16 @@
             <h2>TNA: Repo Hybrid<br>(Voice/Electronic) STP</h2>
             <form>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" placeholder="Email address">
+                    <input type="email" class="form-control" name="email" placeholder="Email address">
                 </div>
                 <div class="form-group password-container">
-                  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-                  <img id="show-password" src="./img/visibility.svg" alt="show password">
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    <img id="show-password" src="./img/visibility.svg" alt="show password">
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="custom-control custom-checkbox mr-sm-2">
-                      <input type="checkbox" class="custom-control-input" id="rememberMe" checked>
-                      <label class="custom-control-label" for="rememberMe">Remember me</label>
+                        <input type="checkbox" class="custom-control-input" id="rememberMe" checked>
+                        <label class="custom-control-label" for="rememberMe">Remember me</label>
                     </div>
                     <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
@@ -43,15 +45,21 @@
             <div class="ml-auto">
                 <span>Powered by</span>
                 <img src="./img/se-black.png" alt="Streaming Edge">
-            </div>            
+            </div>
         </div>
-
-
     </div>
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#show-password").on('click', function () {
+                var x = document.getElementById("password");
+                x.type = (x.type === "password") ? "text" : "password";
+            });
+        });
+    </script>
 </body>
+
 </html>

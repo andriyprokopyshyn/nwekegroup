@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Manage Traider</title>
 </head>
 
 <body class="dashboard">
@@ -104,7 +104,7 @@
                         <a class="nav-item nav-link" id="nav-weighted-average" data-toggle="tab"
                             href="#weighted-average" role="tab" aria-controls="weighted-average"
                             aria-selected="false">Weighted Average</a>
-                        <a class="nav-item nav-link active" id="nav-instrument-report" data-toggle="tab"
+                        <a class="nav-item nav-link" id="nav-instrument-report" data-toggle="tab"
                             href="#instrument-report" role="tab" aria-controls="instrument-report"
                             aria-selected="false">Instrument Report</a>
                     </div>
@@ -365,8 +365,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="tab-pane fade show active" id="instrument-report" role="tabpanel"
-                        aria-labelledby="nav-contact-tab">
+                    <div class="tab-pane fade" id="instrument-report" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <div class="breadcrumbs">
                             <a href="#">Manage Cusip</a>/<a href="#">List Cusip</a>
                         </div>
@@ -467,6 +466,228 @@
                                 </thead>
                             </table>
                         </div>
+                    </div>
+
+                    <div class="tab-pane fade show active manage-traider" id="edit-traider" role="tabpanel"
+                        aria-labelledby="nav-contact-tab">
+                        <div class="breadcrumbs">
+                            <a href="#">Manage Traider</a>/<a href="#">Edit Traider</a>
+                        </div>
+
+                        <div class="title">
+
+                            <h2>Edit Trader</h2>
+                            <div class="buttons">
+                                <a href="javascript:void(0)" id="print">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <rect width="34" height="34" x=".5" y=".5" fill="#FFF" fill-rule="nonzero"
+                                                stroke="#CDE4F0" rx="3" />
+                                            <g>
+                                                <path fill="#298ACF" fill-rule="nonzero"
+                                                    d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"
+                                                    transform="translate(6 5)" />
+                                                <path d="M0 0L24 0 24 24 0 24z" transform="translate(6 5)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" id="refresh">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                                        <g fill="none">
+                                            <rect width="34" height="34" x=".5" y=".5" fill="#FFF" stroke="#CDE4F0"
+                                                rx="3" />
+                                            <g fill="#298ACF">
+                                                <path
+                                                    d="M11.842 11.875l3.568-4.75 3.59 4.75h-2.375v1.188c0 1.964-1.598 3.562-3.563 3.562H5.939c-1.965 0-3.563-1.598-3.563-3.563v-1.187H4.75v1.188c0 .654.533 1.187 1.188 1.187h7.125c.654 0 1.187-.533 1.187-1.188v-1.187h-2.408zM7.158 4.75L3.59 9.5 0 4.75h2.375V3.562C2.375 1.599 3.973 0 5.938 0h7.125c1.964 0 3.562 1.598 3.562 3.563V4.75H14.25V3.562c0-.654-.533-1.187-1.188-1.187H5.939c-.655 0-1.188.533-1.188 1.188V4.75h2.408z"
+                                                    transform="translate(8 9)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" id="save">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                                        <g fill="none">
+                                            <rect width="34" height="34" x=".5" y=".5" fill="#FFF" stroke="#CDE4F0"
+                                                rx="3" />
+                                            <g fill="#298ACF">
+                                                <path
+                                                    d="M18.644 12c-.212-.213-.47-.32-.775-.32h-5.288l-1.55 1.55c-.44.426-.957.639-1.55.639-.592 0-1.109-.213-1.55-.638l-1.538-1.55H1.094c-.304 0-.562.106-.775.319-.213.212-.319.47-.319.775v3.647c0 .303.106.562.32.774.212.213.47.32.774.32h16.775c.304 0 .563-.107.775-.32.213-.212.32-.47.32-.774v-3.647c0-.304-.107-.563-.32-.775zm-4.273 3.84c-.145.145-.316.217-.513.217-.198 0-.369-.072-.513-.217-.144-.144-.217-.315-.217-.512 0-.198.073-.37.217-.513.144-.145.315-.217.513-.217.197 0 .368.072.513.217.144.144.216.315.216.513 0 .197-.072.368-.216.512zm2.917 0c-.144.145-.315.217-.513.217-.197 0-.368-.072-.513-.217-.144-.144-.216-.315-.216-.512 0-.198.072-.37.216-.513.145-.145.316-.217.513-.217.198 0 .369.072.513.217.144.144.217.315.217.513 0 .197-.073.368-.217.512z"
+                                                    transform="translate(8 8)" />
+                                                <path
+                                                    d="M8.969 12.193c.137.145.308.217.513.217.205 0 .376-.072.512-.217L15.1 7.088c.235-.22.289-.486.16-.798-.13-.296-.354-.444-.673-.444H11.67V.74c0-.197-.073-.368-.217-.513-.144-.144-.315-.216-.513-.216H8.023c-.198 0-.369.072-.513.216-.144.145-.217.316-.217.513v5.106H4.376c-.32 0-.543.148-.672.444-.13.312-.076.578.16.798l5.105 5.105z"
+                                                    transform="translate(8 8)" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <form class="row traider-form" action="">
+                            <div class="col-lg-6 col-md-8 col-sm-12 row mx-0 px-0">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="traider-name">Trader Name<span class="red">*</span></label>
+                                        <input name="traider-name" class="form-control" id="traider-name"
+                                            placeholder="Trader Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="full-name">Full Name<span class="red">*</span></label>
+                                        <input name="full-name" class="form-control" id="full-name"
+                                            placeholder="Full Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="customer-name">Customer Name<span class="red">*</span></label>
+                                        <select class="form-control" id="customer-name" name="customer-name">
+                                            <option selected>ABN AMBROS CH</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="role-name">Role Name<span class="red">*</span></label>
+                                        <select class="form-control" id="role-name" name="role-name">
+                                            <option selected>Trader</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="platform-id">Platform ID<span class="red">*</span></label>
+                                        <input name="platform-id" class="form-control" id="platform-id" placeholder="ID"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="status">Role Name<span class="red">*</span></label>
+                                        <select class="form-control" id="status" name="status">
+                                            <option selected>Trader</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="status">Allow Institution View<span class="red">*</span></label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio"
+                                                    name="allow-institution-view" id="allow-institution-view-1"
+                                                    value="yes" checked>
+                                                <label class="form-check-label"
+                                                    for="allow-institution-view-1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio"
+                                                    name="allow-institution-view" id="allow-institution-view-2"
+                                                    value="no">
+                                                <label class="form-check-label"
+                                                    for="allow-institution-view-2">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="status">Allow Multiple Session<span class="red">*</span></label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio"
+                                                    name="allow-multiple-session" id="allow-multiple-session-1"
+                                                    value="yes" checked>
+                                                <label class="form-check-label"
+                                                    for="allow-multiple-session-1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio"
+                                                    name="allow-multiple-session" id="allow-multiple-session-2"
+                                                    value="no">
+                                                <label class="form-check-label"
+                                                    for="allow-multiple-session-2">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="status">Type Of Trade</label>
+                                        <div>
+                                            <div class="custom-control custom-checkbox thin-font">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="do-not-show-electronic-trade"
+                                                    name="do-not-show-electronic-trade">
+                                                <label class="custom-control-label"
+                                                    for="do-not-show-electronic-trade">Do not show Electronic
+                                                    Trade</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox thin-font">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    name="do-not-show-voice-trade" id="do-not-show-voice-trade">
+                                                <label class="custom-control-label" for="do-not-show-voice-trade">Do not
+                                                    show Voice Trade</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="address1">Address1</label>
+                                        <input name="address1" class="form-control" id="address1"
+                                            placeholder="Address1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address2">Address2</label>
+                                        <input name="address2" class="form-control" id="address2"
+                                            placeholder="Address2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input name="city" class="form-control" id="city" placeholder="City">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input name="state" class="form-control" id="state" placeholder="State">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <input name="country" class="form-control" id="country" placeholder="Country">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="work-phone">Work Phone</label>
+                                        <input name="work-phone" class="form-control" id="work-phone"
+                                            placeholder="Work Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email<span class="red">*</span></label>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="status">IP Restriction<span class="red">*</span></label>
+                                        <div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="ip-restriction"
+                                                    id="ip-restriction-1" value="yes" checked>
+                                                <label class="form-check-label" for="ip-restriction-1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="ip-restriction"
+                                                    id="ip-restriction-2" value="no">
+                                                <label class="form-check-label" for="ip-restriction-2">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex button-container">
+                                        <button class="contact-btn full" type="submit">Save</button>
+                                        <button class="contact-btn">Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-sm-12">
+                                <div class="btn-container">
+                                    <button class="contact-btn full flexible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="#FFF" fill-rule="evenodd"
+                                                d="M19 13L13 13 13 19 11 19 11 13 5 13 5 11 11 11 11 5 13 5 13 11 19 11z" />
+                                        </svg>
+                                        Add New Cusip
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

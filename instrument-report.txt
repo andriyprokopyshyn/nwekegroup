@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "cusip": "-1",
+      "nickname": "0 01/01/00",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "2",
+      "cusip": "3128X1DA2",
+      "nickname": "mermempasca",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "3",
+      "cusip": "3128X1DA2",
+      "nickname": "0 05/06/19",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "4",
+      "cusip": "3128X1DA2",
+      "nickname": "0 05/06/21",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "5",
+      "cusip": "3128X1DA2",
+      "nickname": "6.0 12/27/29",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "6",
+      "cusip": "3128X1DA2",
+      "nickname": "6.0 12/27/29",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "7",
+      "cusip": "3128X1DA2",
+      "nickname": "6.0 12/27/29",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "8",
+      "cusip": "3128X1DA2",
+      "nickname": "6.0 12/27/29",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "9",
+      "cusip": "3128X1DA2",
+      "nickname": "6.0 12/27/29",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    },
+    {
+      "id": "10",
+      "cusip": "3128X1DA2",
+      "nickname": "6.0 12/27/29",
+      "is_enabled": true,
+      "weightedavgshown": false,
+      "isgcshell": false
+    }
+  ]
+}
